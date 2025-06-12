@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Interactivo | Entre Tazas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header-flex">
+  <div class="logo">
+    <a href="index.html"><img src="imagenes/logosinfondo.png" alt="Logo Entre Tazas" /></a>
+  </div>
+
+  <nav>
+    <input type="checkbox" id="toggle-menu" />
+    <label for="toggle-menu" class="menu-label">&#9776;</label>
+    <ul class="menu-navegacion">
+      
+      <li><a href="coffee-guide.html">Guide</a></li>
+      <li><a href="coffee-news.html">News</a></li>
+      <li><a href="mapa-interactivo.html">Mapa</a></li>
+      <li><a href="enciclopedia.html">Enciclopedia</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <h1>Mapa Interactivo</h1>
+
+    <section id="mapa">
+      <h2>Find a Coffee</h2>
+
+      <form class="mapa-search" action="https://www.google.com/maps" target="mapFrame" method="get">
+        <input type="hidden" name="output" value="embed">
+        <input
+          type="text"
+          name="q"
+          placeholder="Buscar cafetería (p. ej. Café Tortoni)"
+          required
+        />
+        <button type="submit">🔍</button>
+      </form>
+
+      <div class="mapa-container">
+        <iframe
+          name="mapFrame"
+          src="https://www.google.com/maps?q=Cuervo+Cafe+Buenos+Aires&output=embed"
+          width="600"
+          height="450"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+        <p>© 2025 Entre Tazas | Facultad de Palermo</p>
+        <img src="imagenes/instagram (5).png" alt="Instagram" />
+        <img src="imagenes/facebook (2).png" alt="Facebook" />
+        <img src="imagenes/tik-tok (2).png" alt="Facebook" />
+      </div>
+  </footer>
+
+</body>
+</html>
